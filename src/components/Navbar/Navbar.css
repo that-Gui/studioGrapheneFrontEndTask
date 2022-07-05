@@ -1,0 +1,21 @@
+
+.nav{
+    position: absolute;
+    z-index: 100;
+    width: 100vw;
+    height: 5rem;
+    display: flex;
+    flex-direction: column
+}
+
+.navlist{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.lognav{
+    margin-left: auto;
+    display: flex;
+}

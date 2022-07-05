@@ -1,6 +1,6 @@
 //section for util imports
-import React from 'react';
-import './Navbar.css';
+import React from 'react'
+import './Navbar.css'
 //import { NavLink } from 'react-router-dom';
 
 //import section for components

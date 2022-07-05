@@ -4,6 +4,7 @@ import './App.css'
 
 //section for component imports
 import Navbar from './components/Navbar/Navbar'
+import Homepage from './components/Homepage/Homepage'
 
 //section for functional components
 const App: React.FC = () => {
@@ -14,7 +15,8 @@ const App: React.FC = () => {
     <div className="App">
       
       <Navbar/>
-      
+
+      <Homepage/>
 
     </div>
   )

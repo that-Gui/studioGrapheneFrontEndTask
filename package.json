@@ -8,10 +8,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "react-icons": "^1.1.35",
     "axios": "^0.27.2",
     "react": "^18.0.0",
-    "react-dom": "^18.0.0",
-    "react-icons": "^4.4.0"
+    "react-dom": "^18.0.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.0",

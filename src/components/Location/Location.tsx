@@ -5,9 +5,15 @@ import './Location.css'
 //section for component imports
 import map from '../../images/fakemap.png'
 
+//section for map function
+  
+  
+
 
 //section for functional component
 const Location: React.FC = () => {
+    
+    
 
     return(
         <div className="location">
@@ -17,7 +23,7 @@ const Location: React.FC = () => {
                 <p>12 Upper St. Martin’s Lane<br/> WC2H 9FB, London</p>
             </div>
 
-            <img src={map} alt="fake map screenshot" />
+           
             
         </div>
     )

@@ -10,6 +10,10 @@ import coralinsta from '../../images/instagram-btn.svg';
 import dets1 from '../../images/detail01.png'
 import dets2 from '../../images/detail02.png'
 import dets3 from '../../images/detail03.png'
+import heart from '../../images/heartsvg.svg'
+import chat from '../../images/chatsvg.svg'
+
+
 
 
 
@@ -31,12 +35,17 @@ const Community: React.FC = () => {
                 <h5>@buzzfeedfood</h5>
                 <p>It’s taco Tuesday! These tacos from @jesseszewczyk have no added sugars and are SO good 🌮. Find the recipe from the link in our bio! 📸: @taylormillerphoto 
                 <br/>
-                <span>69</span><span>14.7k</span>
+                <img src={chat} alt="" />
+                <span>69</span>
+                <img src={heart} alt="" />
+                <span>14.7k</span>
                 </p>
                 <img src={dets1} alt="" />
                 <div className="cardpic">
                     <img src={taco} alt="" />
+                    <div className="coin">
                     <img src={coralinsta} alt="" />
+                    </div>
                 </div>
                 <img src={dets2} alt="" />
             </div>
@@ -48,12 +57,17 @@ const Community: React.FC = () => {
                 <h5>@love_food</h5>
                 <p>Waffle sticks in Copenhagen! 🇩🇰😍 Milk chocolate with sprinkles, dark chocolate with coconut and milk chocolate with peanuts! [📷: @foodwithmichel] #lovefood
                 <br/>
-                <span>789</span><span>99.7k</span>
+                <img src={chat} alt="" />
+                <span>789</span>
+                <img src={heart} alt="" />
+                <span>99.7k</span>
                 </p>
                 <img src={dets3} alt="" />
                 <div className="cardpic">
                     <img src={waffle} alt="" />
+                    <div className="coin">
                     <img src={coralinsta} alt="" />
+                    </div>
                 </div>
             </div>
         
@@ -69,11 +83,16 @@ const Community: React.FC = () => {
                 <h5>@buzzfeedfood</h5>
                 <p>Getting into long weekend mode like 🍤 #pancitpalabok (📷 @jeepneynyc)
                 <br/>
-                <span>152</span><span>18.2k</span>
+                <img src={chat} alt="" />
+                <span>152</span>
+                <img src={heart} alt="" />
+                <span>18.2k</span>
                 </p>
                 <div className="cardpic">
                     <img src={squid} alt="" />
+                    <div className="coin">
                     <img src={coralinsta} alt="" />
+                    </div>
                 </div>
             </div>
         

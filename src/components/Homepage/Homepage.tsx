@@ -8,6 +8,7 @@ import Hero from '../Hero/Hero'
 import Community from '../Community/Community'
 import Location from '../Location/Location'
 import Location2 from '../Location/Location2'
+import Menu from '../Menu/Menu'
 
 // section for functional component
 const Homepage: React.FC = () => {
@@ -27,11 +28,8 @@ const Homepage: React.FC = () => {
 
         <Location2/>
         
-        <div>
-            Menu
-        </div>
+        <Menu/>
  
-
         <div>
             Recipes
         </div>

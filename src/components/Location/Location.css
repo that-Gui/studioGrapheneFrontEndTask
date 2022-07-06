@@ -1,0 +1,25 @@
+
+.location{
+    height: 100vh;
+    background-color: var(--primary);
+    color: var(--dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.locleg{
+    background-color: #fff;
+    margin-right: -10rem;
+    z-index: 2;
+    padding: 1rem;
+}
+
+.locleg h2{
+    margin-top: -2rem;
+}
+
+.location img{
+    height: 80vh;
+    width: 80vw;
+}

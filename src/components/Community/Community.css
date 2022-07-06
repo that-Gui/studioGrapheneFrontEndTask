@@ -1,0 +1,32 @@
+
+.community{
+    height: 100vh;
+    background-color: #fff;
+    color: var(--dark);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.topcom{
+    height: 30vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.midcom{
+    height: 30vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.botcom{
+    height: 30vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.cardpic img{
+    height: 13rem;
+}

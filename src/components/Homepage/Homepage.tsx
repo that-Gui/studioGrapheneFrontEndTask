@@ -5,22 +5,25 @@ import './Homepage.css'
 
 //import section for components
 import Hero from '../Hero/Hero'
+import Community from '../Community/Community'
+import Location from '../Location/Location'
 
 // section for functional component
 const Homepage: React.FC = () => {
+
+    /* const [section, setSection] = React.useState();
+
+    const changePage = (page: number) => setSection(page); */
+
   return (
     <div className="container">
         
-        <h1>Homepage</h1>
-        <div>
-            <Hero/>
-        </div>
-        <div>
-            Community
-        </div>
-        <div>
-            Location
-        </div>
+        <Hero />
+     
+        <Community />
+          
+        <Location/>
+        
         <div>
             Menu
         </div>

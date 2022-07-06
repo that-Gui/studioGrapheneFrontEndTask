@@ -8,7 +8,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "react-icons": "^1.1.35",
+    "@react-google-maps/api": "^2.12.0",
     "axios": "^0.27.2",
     "react": "^18.0.0",
     "react-dom": "^18.0.0"

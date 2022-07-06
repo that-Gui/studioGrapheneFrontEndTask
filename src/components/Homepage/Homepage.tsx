@@ -7,6 +7,7 @@ import './Homepage.css'
 import Hero from '../Hero/Hero'
 import Community from '../Community/Community'
 import Location from '../Location/Location'
+import Location2 from '../Location/Location2'
 
 // section for functional component
 const Homepage: React.FC = () => {
@@ -23,10 +24,14 @@ const Homepage: React.FC = () => {
         <Community />
           
         <Location/>
+
+        <Location2/>
         
         <div>
             Menu
         </div>
+ 
+
         <div>
             Recipes
         </div>

@@ -9,6 +9,7 @@ import Community from '../Community/Community'
 import Location from '../Location/Location'
 import Location2 from '../Location/Location2'
 import Menu from '../Menu/Menu'
+import Footer from '../Footer/Footer'
 
 // section for functional component
 const Homepage: React.FC = () => {
@@ -36,9 +37,8 @@ const Homepage: React.FC = () => {
         <div>
             contactUs
         </div>
-        <div>
-            footer
-        </div>
+        
+        <Footer/>
 
     </div>
   )

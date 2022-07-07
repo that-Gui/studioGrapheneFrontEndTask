@@ -4,7 +4,7 @@
     color: var(--dark);
     height: 100vh;
     display: grid;
-    grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr;
+    grid-template: auto 1fr / 1fr 1fr 1fr 1fr;
     padding-left: 10vw;
     padding-right: 10vw;
 }

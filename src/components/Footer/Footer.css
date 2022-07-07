@@ -1,0 +1,38 @@
+
+.footer{
+    background-color: var(--dark);
+    height: 50vh;
+    color: #767676;
+    display: grid;
+    grid-template: 1fr auto / 1fr auto;
+    padding: 10vh 10vw 10vh 10vw;
+}
+
+.footerfive{
+    display: grid;
+    grid-template: 1fr / 1fr 1fr 1fr 1fr 1fr;
+}
+
+.footerfive h5{
+    color: #FFDAC9;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.footerfive p{
+margin-bottom: 1rem;
+}
+
+.footerlogo{
+    color: #fff;
+    text-align: right;
+}
+
+.footercopy{
+
+}
+
+.footersocial{
+    display: flex;
+    justify-content: space-around;
+}

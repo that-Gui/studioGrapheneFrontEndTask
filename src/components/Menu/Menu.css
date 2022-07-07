@@ -3,4 +3,40 @@
     background-color: #F8F8F8;
     color: var(--dark);
     height: 100vh;
+    display: grid;
+    grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+.menutitle{
+    padding: 2rem;
+    grid-column: 1 / 5;
+    text-align: center;
+}
+
+.starters{
+    grid-column: 1 / 2;
+    text-align: center;
+    background-color: pink;
+}
+
+.mains {
+    grid-column: 2 / 3;
+    text-align: center;
+    background-color: pink;
+}
+
+.side {
+    grid-column: 3 / 4;
+    text-align: center;
+    background-color: pink;
+
+}
+
+.desserts {
+    grid-column: 4 / 5;
+    text-align: center;
+    background-color: pink;
+
 }

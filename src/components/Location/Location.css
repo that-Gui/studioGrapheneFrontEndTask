@@ -8,8 +8,15 @@
     align-items: center;
 }
 
+.ting{
+    width: 100vw;
+    height: 100vh;
+    margin-left: -12rem;
+}
+
 .locleg{
     background-color: #fff;
+    margin-left: 8rem;
     margin-right: -10rem;
     z-index: 2;
     padding: 1rem;
@@ -17,14 +24,5 @@
 
 .locleg h2{
     margin-top: -2rem;
-}
-
-.location img{
-    
-    width: 80vw;
-}
-
-.ting{
-    width: 80vw;
-    height: 80vh;
+    text-align: center;
 }

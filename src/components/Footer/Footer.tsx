@@ -57,7 +57,7 @@ const Footer: React.FC = (props) => {
                 </div>
             </div>
             <div className="footerlogo" ref={ref}>
-                <h2>THIS IS THE<br/>LOGO</h2>
+                <h2>THIS IS THE<br/><span>LOGO</span></h2>
             </div>
             <div className="footercopy">
             <p>2017. Company. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor .</p>  

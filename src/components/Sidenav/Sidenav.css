@@ -1,0 +1,9 @@
+
+.sidenav{
+width: 5rem;
+height: 5rem;
+margin-left: 5rem;
+color: var(--dark);
+color: aquamarine;
+z-index: 69;
+}

@@ -12,66 +12,91 @@ interface ppn{
 
 //section for functional component
 const Sidenav: React.FC<ppn> = (props) => {
-    
-console.log('props', props);
 
-if (props.pagenumber === '1'){
-return(
-    
+
+    if (props.pagenumber === '1'){
+        return(
         <div className="sidenav">
 
            <ul>
-            <li>1</li>
-            <li>---</li>
-            <li>---</li>
-            <li>---</li>
-            <li>---</li>
-            <li>---</li>
+            <li className="strike">01</li>
+            <li>----</li>
+            <li>----</li>
+            <li>----</li>
+            <li>----</li>
            </ul>
    
         </div>
-    )}else if(props.pagenumber === '2'){
+    )}
+    else if(props.pagenumber === '2'){
         return(
-
-            <div className="sidenav">
-    
-               <ul>
-                <li>---</li>
-                <li>2</li>
-                <li>---</li>
-                <li>---</li>
-                <li>---</li>
-                <li>---</li>
-               </ul>
-       
-            </div>
-        )  
-    }else if(props.pagenumber === '3'){
-        return(
-
-            <div className="sidenav">
-    
-               <ul>
-                <li>---</li>
-                <li>---</li>
-                <li>3</li>
-                <li>---</li>
-                <li>---</li>
-                <li>---</li>
-               </ul>
-       
-            </div>
-        )  
-    }else  return (
         <div className="sidenav">
     
                <ul>
-                <li>---</li>
-                <li>---</li>
-                <li>---</li>
-                <li>---</li>
-                <li>---</li>
-                <li>---</li>
+                <li>----</li>
+                <li className="strike">02</li>
+                <li>----</li>
+                <li>----</li>
+                <li>----</li>
+               </ul>
+       
+            </div>
+    )}
+    else if(props.pagenumber === '3'){
+        return(
+
+            <div className="sidenav">
+    
+               <ul>
+                <li>----</li>
+                <li>----</li>
+                <li className="strike">03</li>
+                <li>----</li>
+                <li>----</li>
+               </ul>
+       
+            </div>
+    )}  
+    else if(props.pagenumber === '4'){
+        return(
+
+            <div className="sidenav">
+    
+               <ul>
+                <li>----</li>
+                <li>----</li>
+                <li>----</li>
+                <li className="strike">04</li>
+                <li>----</li>
+               </ul>
+       
+            </div>
+    )}
+    else if(props.pagenumber === '5'){
+        return(
+
+            <div className="sidenav">
+    
+               <ul>
+                <li>----</li>
+                <li>----</li>
+                <li>----</li>
+                <li>----</li>
+                <li className="strike">05</li>
+               </ul>
+       
+            </div>
+        )  
+    }
+    else  return (
+        <div className="sidenav">
+    
+               <ul>
+                <li>----</li>
+                <li>----</li>
+                <li>----</li>
+                <li>----</li>
+                <li>----</li>
                </ul>
        
             </div>

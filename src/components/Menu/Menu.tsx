@@ -2,6 +2,8 @@
 import React from "react"
 import './Menu.css'
 import axios from 'axios';
+import { useInView } from 'react-intersection-observer'
+
 
 //section for component imports
 
@@ -16,22 +18,26 @@ interface resobj {
   }
 
 //section for functional component
-const Menu: React.FC = () => {
+const Menu: React.FC = (props) => {
 
+    const { ref, inView } = useInView();
+
+    if(inView){props.change('4')};
+    
     const [food, setFood] = React.useState([]);
-
+    
     React.useEffect(() => {
-    
-    axios.get(`https://studiographene-exercise-api.herokuapp.com/foods`).then((response) =>{
-      setFood(response.data)})
-      .catch((err) => console.log(err));
-    }, []);
-    
-    return(
+        
+        axios.get(`https://studiographene-exercise-api.herokuapp.com/foods`).then((response) =>{
+            setFood(response.data)})
+            .catch((err) => console.log(err));
+        }, []);
+        
+        return(
+            
+            <div className="menu">
 
-        <div className="menu">
-
-            <div className="menutitle">
+            <div className="menutitle" ref={ref}>
                 <h3>OUR MENU</h3>
                 <p>KNOW MORE</p>
             </div>

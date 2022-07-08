@@ -1,26 +1,33 @@
 //section for util imports
 import React from "react"
 import './Hero.css'
+import { useInView } from 'react-intersection-observer'
+
 
 //section for component imports
 import Coco from '../../images/heroCoco.png'
 import stamp from '../../images/stamp.png'
 
+//section for interface
+
+
 //section for functional component
-const Hero: React.FC = () => {
+const Hero: React.FC = (props) => {
+
+    const { ref, inView } = useInView();
+
+    if(inView){props.change('1')};
     
     return(
-
-        <div className="hero">
-            
+        
+        <div className="hero" ref={ref}>
             <img className="heroimg" src={Coco} alt="image of an coconut cocktail" />
-            <img src={stamp} alt="foodie logo" />
+            <img src={stamp} alt="foodie logo"/>
             <h1>THE BEST FOODIE<br/> EXPERIENCE</h1>
             <h4>NOW IN LONDON</h4>
             <div className="sidebtn">
             <p>REQUEST INFO</p>
             </div>
-
         </div>
     )
 }

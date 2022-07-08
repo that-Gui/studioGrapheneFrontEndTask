@@ -4,6 +4,7 @@ import './Homepage.css'
 
 
 //import section for components
+import Navbar from '../Navbar/Navbar'
 import Sidenav from '../Sidenav/Sidenav'
 import Hero from '../Hero/Hero'
 import Community from '../Community/Community'
@@ -29,18 +30,19 @@ const Homepage: React.FC = () => {
   return (
     <div className="container">
 
-      
-        <Sidenav pagenumber={page} />
-    
-        <Hero /* change={changepage} *//>
-     
-        <Community />
-          
-        <Location/>
+        <Navbar/>
 
-        <Location2/>
+        <Sidenav pagenumber={page} />
+   
+        <Hero change={changepage}/>
+     
+        <Community change={changepage}/>
+          
+        {/* <Location/> */}
+
+        <Location2 change={changepage}/>
         
-        <Menu/>
+        <Menu change={changepage}/>
  
         <div>
             Recipes
@@ -49,7 +51,7 @@ const Homepage: React.FC = () => {
             contactUs
         </div>
         
-        <Footer/>
+        <Footer change={changepage}/>
         
 
     </div>

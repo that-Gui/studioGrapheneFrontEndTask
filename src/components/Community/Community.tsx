@@ -1,6 +1,8 @@
 //section for util imports
 import React from "react"
 import './Community.css'
+import { useInView } from 'react-intersection-observer'
+
 
 //section for component imports
 import taco from '../../images/taco.jpg'
@@ -18,12 +20,16 @@ import chat from '../../images/chatsvg.svg'
 
 
 //section for functional component
-const Community: React.FC = () => {
+const Community: React.FC = (props) => {
 
+    const { ref, inView } = useInView();
+
+    if(inView){props.change('2')};
+    
     return(
         <div className="community">
 
-        <div className="topcom">
+        <div className="topcom" ref={ref}>
 
             <div className="comtitle">
                 <h2>MEET OUR<br/>COMMUNITY</h2>

@@ -1,27 +1,36 @@
 
 .nav{
-    position: absolute;
-    z-index: 100;
+    position: fixed;
     width: 100vw;
-    height: 5rem;
-    display: flex;
-    flex-direction: column;
-    background-color: none;
+    height: 3rem;
 }
 
 .navlist{
+    position: fixed;
+    width: 100vw;
+    height: 3rem;
+    z-index: 100;
     list-style-type: none;
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+    align-items: center;
     padding: 0.5rem;
-}
-
-.lognav{
-    margin-left: auto;
-    display: flex;
+    font-weight: 400;
 }
 
 .navlist li{
+    font-size: 1.1rem;
+    margin-left: 2rem;
+    
+}
+
+.navlogi{
+    display: flex;
+    margin-left: auto;
+    margin-right: 2rem;
+}
+
+#lg{
+    font-weight: 700;
+    font-size: 2rem;
     margin-right: 1rem;
 }

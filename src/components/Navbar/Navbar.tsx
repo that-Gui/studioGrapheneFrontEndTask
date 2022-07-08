@@ -10,18 +10,20 @@ import './Navbar.css'
 const Navbar: React.FC = () => {
   return (
     <div className='navbar'>
+        
         <ul className='navlist'>
-        <li /* className='navitem' to="" */>LOGO</li>
-        <li /* className='navitem' to="" */>ABOUT</li>
-        <li /* className='navitem' to="" */>COMMUNITY</li>
-        <li /* className='navitem' to="" */>LOCATION</li>
-        <li /* className='navitem' to="" */>OUR MENU</li>
-        <li /* className='navitem' to="" */>RECIPES</li>
-        <div className='lognav'>
-            <li /* className='navitem' to="" */>CONTACT</li>
-            <li /* className='navitem' to="" */>LOGIN</li>
-        </div>
+          <li id='lg'>LOGO</li>
+          <li>ABOUT</li>
+          <li>COMMUNITY</li>
+          <li>LOCATION</li>
+          <li>OUR MENU</li>
+          <li>RECIPES</li>
+          <div className="navlogi">
+            <li>CONTACT</li>
+            <li>LOGIN</li>
+          </div>
         </ul>
+
     </div>
   )
 }

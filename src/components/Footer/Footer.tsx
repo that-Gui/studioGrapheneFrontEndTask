@@ -1,6 +1,7 @@
 //section for util imports
 import React from "react"
 import './Footer.css'
+import { useInView } from 'react-intersection-observer'
 
 //section for component imports
 import li from '../../images/Linkedin-icon.svg'
@@ -9,11 +10,16 @@ import ig from '../../images/instagram-icon.svg'
 
 
 //section for functional component
-const Footer: React.FC = () => {
+const Footer: React.FC = (props) => {
+    
+    const { ref, inView } = useInView();
+
+    if(inView){props.change('5')};
     
     return(
-
+        
         <div className="footer">
+            
 
             <div className="footerfive">
                 <div>
@@ -50,7 +56,7 @@ const Footer: React.FC = () => {
                     <p>subSection</p>
                 </div>
             </div>
-            <div className="footerlogo">
+            <div className="footerlogo" ref={ref}>
                 <h2>THIS IS THE<br/>LOGO</h2>
             </div>
             <div className="footercopy">

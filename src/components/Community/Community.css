@@ -1,7 +1,7 @@
 
 .community{
     height: 100vh;
-    background-color: #fff;
+    background-color: violet;
     color: var(--dark);
     display: flex;
     flex-direction: column;
@@ -9,11 +9,125 @@
     justify-content: center;
 }
 
+/* ---------------------------- */
 .topcom{
-    height: 30vh;
     display: flex;
     flex-direction: row;
+    height: 30vh;
 }
+.comtitle{
+    font-weight: 600;
+    width: 20rem;
+    margin-right: 5rem;
+    position: relative;
+    
+}
+
+.comtitle h3{
+    font-size: 3rem;
+    position: absolute;
+    top: 0;
+    right: 1rem;
+    z-index: 33;
+}
+
+.comline {
+    background-color: var(--primary);
+    height: 0.5rem;
+    width: 20rem;
+    position: absolute;
+    top: 5rem;
+    right: 0;
+}
+
+.combtn{
+    background-color: var(--primary);
+    color: var(--dark);
+    padding: 0.5rem;
+    width: 7rem;
+    margin-bottom: 3rem;
+    position: absolute;
+    top: 8rem;
+}
+
+#topp{
+    position: absolute;
+    top: 13rem;
+}
+/* ---------------------------- */
+.taco{
+    margin-top: 5rem;
+    width: 29rem;
+    height: 13rem;
+    display: flex;
+    position: relative;
+}
+
+.cardpic{
+    background: #FFF;
+    box-shadow: 0px 15px 50px #0000000F;
+    width: 13rem;
+    height: 13rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#cdpi{
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    height: 12rem;
+    width: 12rem;
+}
+#coin1{
+    height: 3rem;
+    z-index: 33;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+ #dets2{
+    width: 8rem;
+    height: 5rem;
+    position: absolute;
+    bottom: -2rem;
+    left: 10rem;
+ }
+
+ .cardtxt{
+    background: #FFF;
+    box-shadow: 0px 15px 50px #0000000F;
+    width: 13rem;
+    height: 13rem;
+    position: absolute;
+    top: 0;
+    right: 0.5rem;
+    z-index: 1;
+    padding: 1rem;
+    font-size: 0.9rem;
+ }
+
+ .cardtxt h5{
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+ }
+
+ .likes{
+    text-align: right;
+    margin-top: 0.5rem;
+ }
+
+ #dets1{
+    height: 3rem;
+    position: absolute;
+    bottom: -1rem;
+    right: 0;
+ }
+/* ---------------------------- */
 
 .midcom{
     height: 30vh;
@@ -21,16 +135,87 @@
     flex-direction: row;
 }
 
+.waffle{
+    margin-top: 5rem;
+    width: 29rem;
+    height: 13rem;
+
+    position: relative;
+}
+
+.cardpic2{
+    background: #FFF;
+    box-shadow: 0px 15px 50px #0000000F;
+    width: 13rem;
+    height: 13rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#cdpi2{
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    height: 12rem;
+    width: 12rem;
+}
+#coin2{
+    height: 3rem;
+    z-index: 33;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#dets3{
+    width: 8rem;
+    height: 5rem;
+    position: absolute;
+    bottom: -2rem;
+    left: 10rem;
+}
+
+/* ---------------------------- */
+
 .botcom{
     height: 30vh;
     display: flex;
     flex-direction: row;
 }
 
-.cardpic img{
-    height: 13rem;
+.comp{
+    width: 13rem;
+    margin-right: 12rem;
 }
 
-.coin img{
+.squid{
+    margin-top: 5rem;
+    width: 29rem;
+    height: 13rem;
+    position: relative;
+}
+.cardpic3{
+    background: #FFF;
+    box-shadow: 0px 15px 50px #0000000F;
+    width: 13rem;
+    height: 13rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+#cdpi3{
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    height: 12rem;
+    width: 12rem;
+}
+#coin3{
     height: 3rem;
+    z-index: 33;
+    position: absolute;
+    top: 0;
+    right: 0;
 }

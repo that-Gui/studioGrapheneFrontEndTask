@@ -1,6 +1,6 @@
 
 .location{
-    height: 50vh;
+    height: 60vh;
     background-color: var(--primary);
     color: var(--dark);
     /* display: flex;
@@ -10,7 +10,7 @@
 }
 
 .ting{
-    height: 50vh;
+    height: 60vh;
 }
 
 .locleg{

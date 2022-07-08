@@ -32,49 +32,65 @@ const Community: React.FC = (props) => {
         <div className="topcom" ref={ref}>
 
             <div className="comtitle">
-                <h2>MEET OUR<br/>COMMUNITY</h2>
-                <p>KNOW MORE</p>
-                <p>LOREM IPSUM DOLOR SIT AMET ERNUT TEMPARTERO SERTU PER NABORE EN TORNA ENTALTO</p>
+
+                
+                <h3>MEET OUR<br/>COMMUNITY</h3>
+                <div className="comline"></div>
+                <p className="combtn">KNOW MORE</p>
+                <p id="topp">LOREM IPSUM DOLOR SIT AMET ERNUT TEMPARTERO SERTU PER NABORE EN TORNA ENTALTO</p>
+            
             </div>
 
-            <div className="instacard taco">
-                <h5>@buzzfeedfood</h5>
-                <p>It’s taco Tuesday! These tacos from @jesseszewczyk have no added sugars and are SO good 🌮. Find the recipe from the link in our bio! 📸: @taylormillerphoto 
-                <br/>
-                <img src={chat} alt="" />
-                <span>69</span>
-                <img src={heart} alt="" />
-                <span>14.7k</span>
-                </p>
-                <img src={dets1} alt="" />
+            <div className="taco">
+
                 <div className="cardpic">
-                    <img src={taco} alt="" />
-                    <div className="coin">
-                    <img src={coralinsta} alt="" />
-                    </div>
+                    <img src={taco} id='cdpi' alt="" />
+                    <img src={coralinsta} id='coin1' alt="" />
                 </div>
-                <img src={dets2} alt="" />
+
+                <img src={dets2} id='dets2' alt="" />
+                
+                <div className="cardtxt">
+                    <h5>@buzzfeedfood</h5>
+                    <p>It’s taco Tuesday! These tacos from @jesseszewczyk have no added sugars and are SO good 🌮. Find the recipe from the link in our bio! 📸: @taylormillerphoto</p>
+
+                    <div className="likes">
+                        <img src={chat} alt="" />
+                        <span>69</span>
+                        <img src={heart} alt="" />
+                        <span>14.7k</span>
+                    </div>
+                    
+                </div>
+
+                <img src={dets1} id='dets1' alt="" />
+            
             </div>
 
         </div>
+
         <div className="midcom">
         
-            <div className="instacard waffle">
+            <div className="waffle">
+
+            <div className="cardtxt">
                 <h5>@love_food</h5>
-                <p>Waffle sticks in Copenhagen! 🇩🇰😍 Milk chocolate with sprinkles, dark chocolate with coconut and milk chocolate with peanuts! [📷: @foodwithmichel] #lovefood
-                <br/>
-                <img src={chat} alt="" />
-                <span>789</span>
-                <img src={heart} alt="" />
-                <span>99.7k</span>
-                </p>
-                <img src={dets3} alt="" />
-                <div className="cardpic">
-                    <img src={waffle} alt="" />
-                    <div className="coin">
-                    <img src={coralinsta} alt="" />
-                    </div>
+                <p>Waffle sticks in Copenhagen! 🇩🇰😍 Milk chocolate with sprinkles, dark {/* chocolate with coconut and milk */} chocolate with peanuts! [📷: @foodwithmichel] #lovefood</p>
+                <div className="likes">
+                    <img src={chat} alt="" />
+                    <span>789</span>
+                    <img src={heart} alt="" />
+                    <span>99.7k</span>
+                </div>    
+            </div>
+
+                <img src={dets3} id="dets3" alt="" />
+                
+                <div className="cardpic2">
+                    <img src={waffle} id="cdpi2" alt="" />
+                    <img src={coralinsta} id='coin2' alt="" />
                 </div>
+                
             </div>
         
         </div>
@@ -85,21 +101,24 @@ const Community: React.FC = (props) => {
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure.</p>
             </div>
 
-            <div className="instacard squid">
-                <h5>@buzzfeedfood</h5>
-                <p>Getting into long weekend mode like 🍤 #pancitpalabok (📷 @jeepneynyc)
-                <br/>
-                <img src={chat} alt="" />
-                <span>152</span>
-                <img src={heart} alt="" />
-                <span>18.2k</span>
-                </p>
-                <div className="cardpic">
-                    <img src={squid} alt="" />
-                    <div className="coin">
-                    <img src={coralinsta} alt="" />
+            <div className="squid">
+
+                <div className="cardtxt">
+                    <h5>@buzzfeedfood</h5>
+                    <p>Getting into long weekend mode like 🍤 #pancitpalabok (📷 @jeepneynyc)</p>
+                    <div className="likes">
+                        <img src={chat} alt="" />
+                        <span>152</span>
+                        <img src={heart} alt="" />
+                        <span>18.2k</span>
                     </div>
                 </div>
+
+                <div className="cardpic3">
+                    <img src={squid} id="cdpi3" alt="" />
+                    <img src={coralinsta} id='coin3'  alt="" />
+                </div>
+
             </div>
         
         </div>

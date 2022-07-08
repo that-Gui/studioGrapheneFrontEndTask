@@ -21,12 +21,16 @@ const Hero: React.FC = (props) => {
     return(
         
         <div className="hero" ref={ref}>
-            <img className="heroimg" src={Coco} alt="image of an coconut cocktail" />
-            <img src={stamp} alt="foodie logo"/>
-            <h1>THE BEST FOODIE<br/> EXPERIENCE</h1>
-            <h4>NOW IN LONDON</h4>
+            <div className="heroimgs">
+                <img  className="logoimg" src={stamp} alt="foodie logo"/>
+                <img className="heroimg" src={Coco} alt="image of an coconut cocktail" />
+            </div>
+            <div className="herotext">
+                <h1>THE BEST FOODIE<br/><span> EXPERIENCE</span></h1>
+                <h4>NOW IN LONDON</h4>
+            </div>
             <div className="sidebtn">
-            <p>REQUEST INFO</p>
+                <p>REQUEST INFO</p>
             </div>
         </div>
     )

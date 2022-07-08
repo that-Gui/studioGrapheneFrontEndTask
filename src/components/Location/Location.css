@@ -1,28 +1,31 @@
 
 .location{
-    height: 100vh;
+    height: 50vh;
     background-color: var(--primary);
     color: var(--dark);
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
+    position: relative;
 }
 
 .ting{
-    width: 100vw;
-    height: 100vh;
-    margin-left: -12rem;
+    height: 50vh;
 }
 
 .locleg{
+    position: absolute;
+    z-index: 5;
+    top: 10vh;
+    left: 10vw;
     background-color: #fff;
-    margin-left: 8rem;
-    margin-right: -10rem;
     z-index: 2;
     padding: 1rem;
 }
 
 .locleg h2{
-    margin-top: -2rem;
+    margin-top: -2.5rem;
     text-align: center;
+    font-size: 3rem;
+    padding-bottom: 0.8rem;
 }

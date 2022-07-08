@@ -44,12 +44,7 @@ const Homepage: React.FC = () => {
         
         <Menu change={changepage}/>
  
-        <div>
-            Recipes
-        </div>
-        <div>
-            contactUs
-        </div>
+        <div><h2>contactUs</h2></div>
         
         <Footer change={changepage}/>
         

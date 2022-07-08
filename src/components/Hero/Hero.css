@@ -1,5 +1,6 @@
 
 .hero{
+    position: relative;
     background-color: var(--primary);
     color: #fff;
     display: flex;
@@ -9,6 +10,48 @@
     height: 100vh;
 }
 
+.heroimgs{
+    position: absolute;
+} 
+
 .heroimg{
-    z-index: 1;
+    height: 80vh;
+}
+
+.logoimg{ 
+    position: absolute;
+    height: 20vh;
+    transform: matrix(0.99, -0.12, 0.12, 0.99, 0, 0);   
+}
+
+.herotext{
+    text-align: center;
+    z-index: 5;
+    padding-top: 20vh;
+    text-shadow: 2px 2px #333
+}
+
+.hero h1{
+    font-size: 6rem;
+    letter-spacing: -0.3rem;
+}
+.hero span{
+ font-size: 8rem;
+}
+
+.hero h4{
+    font-size: 3rem;
+    letter-spacing: 0px;
+   
+}
+
+.sidebtn{
+    background-color: #fff;
+    color: var(--dark);
+    z-index: 33;
+    font-weight: 600;
+    padding: 0.5rem;
+    transform: rotate(-90deg);
+    position: absolute;
+    right: 0;
 }

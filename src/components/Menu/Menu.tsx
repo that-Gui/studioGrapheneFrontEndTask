@@ -38,6 +38,7 @@ const Menu: React.FC = (props) => {
             <div className="menu">
 
             <div className="menutitle" ref={ref}>
+                <div className="menuline"></div>
                 <h3>OUR MENU</h3>
                 <p>KNOW MORE</p>
             </div>
@@ -45,10 +46,10 @@ const Menu: React.FC = (props) => {
             <div className="starters">
                 <h3>STARTERS</h3>
                 {food.filter( (ele: resobj) => ele.type == 'starters').map( (filteredFoods: resobj) => 
-                    <div className="dish">
+                    <div className="starterm">
                         <h5>{filteredFoods.title}</h5>
                         <p>{filteredFoods.description}</p>
-                        <p>{`£`}{filteredFoods.price}</p>
+                        <p><span>{`£`}{filteredFoods.price}</span></p>
                     </div>
                 )}
             </div>
@@ -56,10 +57,10 @@ const Menu: React.FC = (props) => {
             <div className="mains">
                 <h3>MAIN<br/>COURSES</h3>
                 {food.filter( (ele: resobj) => ele.type == 'main_courses').map( (filteredFoods: resobj) => 
-                    <div className="dish">
+                    <div className="starterm">
                         <h5>{filteredFoods.title}</h5>
                         <p>{filteredFoods.description}</p>
-                        <p>{`£`}{filteredFoods.price}</p>
+                        <p><span>{`£`}{filteredFoods.price}</span></p>
                     </div>
                 )}
             </div>
@@ -67,10 +68,10 @@ const Menu: React.FC = (props) => {
             <div className="side">
                 <h3>SIDES</h3>
                 {food.filter( (ele: resobj) => ele.type == 'sides').map( (filteredFoods: resobj) => 
-                    <div className="dish">
+                    <div className="starterm">
                         <h5>{filteredFoods.title}</h5>
                         <p>{filteredFoods.description}</p>
-                        <p>{`£`}{filteredFoods.price}</p>
+                        <p><span>{`£`}{filteredFoods.price}</span></p>
                     </div>
                 )}
             </div>
@@ -78,10 +79,10 @@ const Menu: React.FC = (props) => {
             <div className="desserts">
                 <h3>DESSERTS</h3>
                 {food.filter( (ele: resobj) => ele.type == 'desserts').map( (filteredFoods: resobj) => 
-                    <div className="dish">
+                    <div className="starterm">
                         <h5>{filteredFoods.title}</h5>
                         <p>{filteredFoods.description}</p>
-                        <p>{`£`}{filteredFoods.price}</p>
+                        <p><span>{`£`}{filteredFoods.price}</span></p>
                     </div>
                 )}
             </div>

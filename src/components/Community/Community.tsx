@@ -2,7 +2,6 @@
 import React from "react"
 import './Community.css'
 import { useInView } from 'react-intersection-observer'
-import { useSpring, animated } from 'react-spring'
 
 
 //section for component imports

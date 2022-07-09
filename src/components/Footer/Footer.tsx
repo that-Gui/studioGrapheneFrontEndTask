@@ -18,7 +18,7 @@ const Footer: React.FC = (props) => {
     
     return(
         
-        <div className="footer">
+        <div className="footer" ref={ref}>
             
 
             <div className="footerfive">
@@ -56,7 +56,7 @@ const Footer: React.FC = (props) => {
                     <p>subSection</p>
                 </div>
             </div>
-            <div className="footerlogo" ref={ref}>
+            <div className="footerlogo">
                 <h2>THIS IS THE<br/><span>LOGO</span></h2>
             </div>
             <div className="footercopy">

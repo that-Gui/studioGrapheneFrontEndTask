@@ -18,14 +18,14 @@ const Location2: React.FC = (props) => {
     if(inView){props.change('3')};
     
     return(
-        <div className="location">
+        <div className="location" ref={ref}>
 
         <div className="locleg">
             <h2>LOCATION</h2>
             <p>12 Upper St. Martin’s Lane<br/> WC2H 9FB, London</p>
         </div>
 
-        <div className="ting" ref={ref}>
+        <div className="ting">
             <iframe src="https://my.atlistmaps.com/map/f1d2ec37-8603-4c82-a002-2afa1fd7ff0a?share=true" allow="geolocation" width="100%" height="100%" frameBorder="0" scrolling="no" allowFullScreen>
             </iframe>
         </div>

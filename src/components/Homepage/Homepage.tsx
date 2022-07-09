@@ -44,7 +44,7 @@ const Homepage: React.FC = () => {
         
         <Menu change={changepage}/>
  
-        <div><h1>contactUs</h1></div>
+        <div className='wakanda'><h1>contactUs</h1></div>
         
         <Footer change={changepage}/>
         

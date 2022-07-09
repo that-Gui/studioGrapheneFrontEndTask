@@ -44,7 +44,7 @@ const Menu: React.FC = (props) => {
             </div>
 
             <div className='starters'>
-                <div className={inView ? 'slidedup3' : 'starters'}>
+                <div className={inView ? 'slidedup3' : 'slidedown2'}>
                 <h3>STARTERS</h3>
                 {food.filter( (ele: resobj) => ele.type == 'starters').map( (filteredFoods: resobj) => 
                     <div className="starterm">
@@ -57,7 +57,7 @@ const Menu: React.FC = (props) => {
             </div>
 
             <div className="mains">
-                <div className={inView ? 'slidedown2' : 'mains'}>
+                <div className={inView ? 'slidedown2' : 'slidedup3'}>
                 <h3>MAIN<br/>COURSES</h3>
                 {food.filter( (ele: resobj) => ele.type == 'main_courses').map( (filteredFoods: resobj) => 
                     <div className="starterm">
@@ -70,7 +70,7 @@ const Menu: React.FC = (props) => {
             </div>
 
             <div className="side">
-                <div className={inView ? 'slidedup3 side' : 'slidedup3r'}>
+                <div className={inView ? 'slidedup3' : 'slidedown2'}>
                 <h3>SIDES</h3>
                 {food.filter( (ele: resobj) => ele.type == 'sides').map( (filteredFoods: resobj) => 
                     <div className="starterm">
@@ -83,7 +83,7 @@ const Menu: React.FC = (props) => {
             </div>
             
             <div className="desserts">
-                <div className={inView ? 'slidedown2' : 'mains'}>
+                <div className={inView ? 'slidedown2' : 'slidedup3'}>
                 <h3>DESSERTS</h3>
                 {food.filter( (ele: resobj) => ele.type == 'desserts').map( (filteredFoods: resobj) => 
                     <div className="starterm">

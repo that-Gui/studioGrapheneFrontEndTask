@@ -7,6 +7,7 @@
     grid-template: auto 1fr / 1fr 1fr 1fr 1fr;
     padding-left: 10vw;
     padding-right: 10vw;
+    overflow: hidden;
 }
 
 
@@ -19,6 +20,9 @@
     flex-direction: column;
     align-items: center;
     position: relative;
+}
+.menutitle h3{
+    z-index: 33;
 }
 .menuline{
     background-color: var(--primary);
@@ -67,7 +71,6 @@
     border-right: 1px solid #CECECE;
     padding: 2rem;
     min-width: 20vw;
-
 }
 .mains h3{
     margin-top: 11rem;
@@ -82,7 +85,6 @@
     border-right: 1px solid #CECECE;
     padding: 2rem;
     min-width: 20vw;
-
 
 }
 .side h3{
@@ -116,7 +118,6 @@
 
 .menu h3{
     font-size: 3rem;
-    z-index: 50;
 }
 
 /* section for menu animations */
@@ -128,20 +129,15 @@
 .slidedup3{
     animation: mup 3s /* steps(12) */ /* infinite */;
 }
-.slidedup3r{
-    animation: mdown 3s /* steps(12) */ /* infinite */;
-}
+
 
 @keyframes mup {
     100%{
         transform: translateY(0vh);
-        opacity: 100%;
     }
 
     0%{
         transform: translateY(100vh);
-        opacity: 0%;
-
     }
 }
 

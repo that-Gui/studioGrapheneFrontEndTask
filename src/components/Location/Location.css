@@ -1,16 +1,17 @@
 
 .location{
-    height: 60vh;
+    height: 80vh;
     background-color: var(--primary);
     color: var(--dark);
     /* display: flex;
     justify-content: center;
     align-items: center; */
     position: relative;
+    z-index: 80;
 }
 
 .ting{
-    height: 60vh;
+    height: 80vh;
 }
 
 .locleg{

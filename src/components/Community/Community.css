@@ -136,7 +136,7 @@
     height: 30vh;
     display: flex;
     flex-direction: row;
-    margin-left: -47rem;
+    margin-left: -35rem;
 }
 
 .waffle{
@@ -175,8 +175,8 @@
     width: 8rem;
     height: 5rem;
     position: absolute;
-    bottom: -2rem;
-    right: 3rem;
+    bottom: -1rem;
+    left: 3rem;
 }
 
 /* ---------------------------- */
@@ -243,3 +243,28 @@
     top: 0;
     right: 0;
 }
+
+/* ------------------------------------------ */
+
+.anime2{
+    animation: cardup 2s /* steps(12) */ /* infinite */;
+}
+
+.anime3{
+    animation: cardup 3s /* steps(12) */ /* infinite */;
+}
+
+.anime4{
+    animation: cardup 3s /* steps(12) */ /* infinite */;
+}
+
+@keyframes cardup {
+    100%{
+        transform: translateY(0vh);
+
+    }
+
+    0%{
+        transform: translateY(101vh);
+    }
+} 

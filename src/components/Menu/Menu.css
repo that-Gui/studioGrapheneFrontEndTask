@@ -118,3 +118,41 @@
     font-size: 3rem;
     z-index: 50;
 }
+
+/* section for menu animations */
+
+.slidedown2{
+    animation: mdown 2s /* steps(12) */ /* infinite */;
+}
+
+.slidedup3{
+    animation: mup 3s /* steps(12) */ /* infinite */;
+}
+.slidedup3r{
+    animation: mdown 3s /* steps(12) */ /* infinite */;
+}
+
+@keyframes mup {
+    100%{
+        transform: translateY(0vh);
+        opacity: 100%;
+    }
+
+    0%{
+        transform: translateY(100vh);
+        opacity: 0%;
+
+    }
+}
+
+@keyframes mdown {
+    100%{
+        transform: translateY(0vh);
+        opacity: 100%;
+    }
+
+    0%{
+        transform: translateY(-100vh);
+        opacity: 0%;
+    }
+} 

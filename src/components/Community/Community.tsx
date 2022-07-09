@@ -2,6 +2,7 @@
 import React from "react"
 import './Community.css'
 import { useInView } from 'react-intersection-observer'
+import { useSpring, animated } from 'react-spring'
 
 
 //section for component imports
@@ -24,14 +25,17 @@ const Community: React.FC = (props) => {
 
     const { ref, inView } = useInView();
 
-    if(inView){props.change('2')};
+    if(inView){
+        props.change('2')
+       
+    };
     
     return(
-        <div className="community">
+        <div className="community" ref={ref}>
 
-        <div className="topcom" ref={ref}>
+        <div className="topcom">
 
-            <div className="comtitle">
+            <div className='comtitle'>
 
                 
                 <h3>MEET OUR<br/>COMMUNITY</h3>
@@ -41,7 +45,7 @@ const Community: React.FC = (props) => {
             
             </div>
 
-            <div className="taco">
+            <div className={inView ? 'taco anime2' : 'taco'}>
 
                 <div className="cardpic">
                     <img src={taco} id='cdpi' alt="" />
@@ -69,9 +73,9 @@ const Community: React.FC = (props) => {
 
         </div>
 
-        <div className="midcom">
+        <div className='midcom'>
         
-            <div className="waffle">
+            <div className={inView ? 'waffle anime3': 'waffle'}>
 
             <div className="cardtxt2">
                 <h5>@love_food</h5>
@@ -103,7 +107,7 @@ const Community: React.FC = (props) => {
             </div>
             </div>
 
-            <div className="squid">
+            <div className={inView ? 'anime4 squid':'squid'}>
 
                 <div className="cardtxt2">
                     <h5>@buzzfeedfood</h5>

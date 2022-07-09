@@ -1,7 +1,7 @@
 
 .contact{
     height: 60vh;
-    background-color: greenyellow;
+    background-color: var(--primary);
     color: var(--text);
     display: flex;
     flex-direction: row;
@@ -10,24 +10,92 @@
 }
 
 .contacttxt{
-    background-color: pink;
+    width: 40vw;
     display: flex;
     flex-direction: column;
+    margin-top: 7rem;
+    position: relative;
+    top: 0;
+}
+.contacttxt h3 {
+    font-size: 3rem;
+    color: var(--dark);
+    letter-spacing: -0.1rem;
+}
+.contacttxt span{
+    font-size: 5rem;
+    font-weight: 600;
+    color: var(--dark);
+    margin-top: -1rem;
+    z-index: 33;
 }
 .ctline{
-    background-color:#fff;
-    height: 1rem;
+    background-color: #fff;
+    height: 0.5rem;
+    width: 23rem;
+    position: absolute;
+    top: 5.5rem;
+    left: -1.3rem;
 }
 
-.contactform{
-    background-color: pink;
+.txtp{
+    width: 23rem;
+    margin-top: 5rem;
+}
+.txtp p{
+    margin-bottom: 2rem;
+}
+/* section for righthand side of contact us section */
 
+.contactform{
+    
+    width: 40vw;
+    margin-top: 0.5rem;
+    position: relative;
+    left: 0;
 }
 #dts2{
     width: 8rem;
     height: 5rem;
+    margin-left: 5rem;
 }
-.contactform form{
-    display: flex;
-    flex-direction: column;
+form{
+    margin-top: 2rem;
+    display: grid;
+    grid-template: 1fr auto / 1fr auto;
+    gap: 1rem;
+}
+
+form label{
+    color: var(--dark);
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+form input{
+    background-color: var(--primary);
+    border-bottom: 1px solid var(--dark);
+    font-size: 1.3rem;
+    line-height: 2rem;
+    width: 20vw;
+    margin-top: 2rem;
+   
+}
+
+form select{
+    background-color: var(--primary);
+    border-bottom: 1px solid var(--dark);
+    font-size: 1.2rem;
+    width: 20vw;
+    margin-top: 1rem;
+}
+
+.formbtn{
+    background-color: var(--dark);
+    color: var(--primary);
+    width: 5rem;
+    padding: 0.3rem;
+    position: absolute;
+    right: -1rem;
+    top: 26rem;
 }

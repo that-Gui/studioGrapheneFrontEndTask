@@ -7,11 +7,11 @@ import { useInView } from 'react-intersection-observer'
 import li from '../../images/Linkedin-icon.svg'
 import tw from '../../images/twitter-icon.svg'
 import ig from '../../images/instagram-icon.svg'
+import { IChangable } from '../../Types/Types'
+
 
 //section for interface
-interface IChangable { 
-    change: (number: string) => void;
-  }
+
 
 //section for functional component
 const Footer: React.FC<IChangable> = (props) => {

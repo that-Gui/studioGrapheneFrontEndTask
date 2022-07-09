@@ -5,12 +5,11 @@ import { useInView } from 'react-intersection-observer'
 
 
 //section for component imports
+import { IChangable } from '../../Types/Types'
 
 
 //section for interface
-interface IChangable { 
-    change: (number: string) => void;
-  }
+
 
 //section for functional component
 const Location2: React.FC<IChangable> = (props) => {

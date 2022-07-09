@@ -14,12 +14,10 @@ import dets2 from '../../images/detail02.png'
 import dets3 from '../../images/detail03.png'
 import heart from '../../images/heartsvg.svg'
 import chat from '../../images/chatsvg.svg'
+import { IChangable } from '../../Types/Types'
+
 
 //section for interface
-interface IChangable { 
-    change: (number: string) => void;
-  }
-
 
 
 //section for functional component

@@ -6,7 +6,7 @@ import { useInView } from 'react-intersection-observer'
 
 
 //section for component imports
-
+import { IChangable } from '../../Types/Types'
 
 //section for response interface
 interface resobj {
@@ -17,9 +17,7 @@ interface resobj {
     id: string
   }
 
-interface IChangable { 
-    change: (number: string) => void;
-  }
+
 
 //section for functional component
 const Menu: React.FC<IChangable> = (props) => {

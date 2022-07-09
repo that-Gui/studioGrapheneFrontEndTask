@@ -7,11 +7,11 @@ import { useInView } from 'react-intersection-observer'
 //section for component imports
 import Coco from '../../images/heroCoco.png'
 import stamp from '../../images/stamp.png'
+import { IChangable } from '../../Types/Types'
+
 
 //section for interface
-interface IChangable { 
-    change: (number: string) => void;
-  }
+
 
 //section for functional component
 const Hero: React.FC<IChangable> = (props) => {

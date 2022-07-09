@@ -73,9 +73,9 @@ const Community: React.FC = (props) => {
         
             <div className="waffle">
 
-            <div className="cardtxt">
+            <div className="cardtxt2">
                 <h5>@love_food</h5>
-                <p>Waffle sticks in Copenhagen! 🇩🇰😍 Milk chocolate with sprinkles, dark {/* chocolate with coconut and milk */} chocolate with peanuts! [📷: @foodwithmichel] #lovefood</p>
+                <p>Waffle sticks in Copenhagen! 🇩🇰😍 Milk chocolate with sprinkles, dark chocolate with coconut and milk chocolate with peanuts! [📷: @foodwithmichel] #lovefood</p>
                 <div className="likes">
                     <img src={chat} alt="" />
                     <span>789</span>
@@ -97,13 +97,15 @@ const Community: React.FC = (props) => {
 
         <div className="botcom">
 
+            <div className="botcomp">
             <div className="comp">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure.</p>
+            </div>
             </div>
 
             <div className="squid">
 
-                <div className="cardtxt">
+                <div className="cardtxt2">
                     <h5>@buzzfeedfood</h5>
                     <p>Getting into long weekend mode like 🍤 #pancitpalabok (📷 @jeepneynyc)</p>
                     <div className="likes">
@@ -114,7 +116,7 @@ const Community: React.FC = (props) => {
                     </div>
                 </div>
 
-                <div className="cardpic3">
+                <div className="cardpic2">
                     <img src={squid} id="cdpi3" alt="" />
                     <img src={coralinsta} id='coin3'  alt="" />
                 </div>

@@ -1,6 +1,6 @@
 
 .community{
-    height: 90vh;
+    height: 100vh;
     background-color: #fff;
     color: var(--dark);
     display: flex;
@@ -15,13 +15,15 @@
     display: flex;
     flex-direction: row;
     height: 30vh;
+    margin-top: 5rem;
 }
 .comtitle{
     font-weight: 600;
     width: 20rem;
     margin-right: 5rem;
     position: relative;
-    
+    top: 0;
+    left: 0;
 }
 
 .comtitle h3{
@@ -135,13 +137,15 @@
 
 .midcom{
     height: 30vh;
+    width: 70vw;
     display: flex;
     flex-direction: row;
-    margin-left: -35rem;
+    justify-content: flex-start;
 }
 
 .waffle{
     margin-top: 5rem;
+    margin-left: 5rem;
     width: 31rem;
     height: 15rem;
     position: relative;

@@ -14,28 +14,27 @@ import dets2 from '../../images/detail02.png'
 import dets3 from '../../images/detail03.png'
 import heart from '../../images/heartsvg.svg'
 import chat from '../../images/chatsvg.svg'
-import { IChangable } from '../../Types/Types'
 
 
 //section for interface
+import { IChangable } from '../../Types/Types'
 
 
 //section for functional component
 const Community: React.FC<IChangable> = (props) => {
 
     const { ref, inView } = useInView();
+    const { ref: aniref, inView: aniview } = useInView();
 
-    if(inView){
-        props.change('2')
-       
-    };
+
+    if(inView){props.change('2')};
     
     return(
         <div className="community" ref={ref}>
 
         <div className="topcom">
 
-            <div className='comtitle'>
+            <div className='comtitle' ref={aniref}>
 
                 
                 <h3>MEET OUR<br/>COMMUNITY</h3>
@@ -45,7 +44,7 @@ const Community: React.FC<IChangable> = (props) => {
             
             </div>
 
-            <div className={inView ? 'taco anime2' : 'taco'}>
+            <div className={aniview ? 'taco anime2' : 'taco'}>
 
                 <div className="cardpic">
                     <img src={taco} id='cdpi' alt="" />
@@ -75,7 +74,7 @@ const Community: React.FC<IChangable> = (props) => {
 
         <div className='midcom'>
         
-            <div className={inView ? 'waffle anime3': 'waffle'}>
+            <div className={aniview ? 'waffle anime3': 'waffle'}>
 
             <div className="cardtxt2">
                 <h5>@love_food</h5>
@@ -107,7 +106,7 @@ const Community: React.FC<IChangable> = (props) => {
             </div>
             </div>
 
-            <div className={inView ? 'anime4 squid':'squid'}>
+            <div className={aniview ? 'anime4 squid':'squid'}>
 
                 <div className="cardtxt2">
                     <h5>@buzzfeedfood</h5>

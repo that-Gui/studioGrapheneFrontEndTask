@@ -13,6 +13,7 @@ import Location2 from '../Location/Location2'
 import Menu from '../Menu/Menu'
 import Footer from '../Footer/Footer'
 
+
 //section for interfaces
 
 

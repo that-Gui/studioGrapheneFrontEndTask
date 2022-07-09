@@ -16,7 +16,7 @@ const Sidenav: React.FC<ppn> = (props) => {
 
     if(props.pagenumber === '1'){
         return(
-        <div className="sidenav">
+            <div className="sidenav">
     
                <ul>
                 <li className="strike">09</li>
@@ -111,7 +111,7 @@ const Sidenav: React.FC<ppn> = (props) => {
             </div>
         )  
     }
-    else  return (
+    /* else  return (
         <div className="sidenav">
     
                <ul>
@@ -124,7 +124,7 @@ const Sidenav: React.FC<ppn> = (props) => {
                </ul>
        
             </div>
-    )
+    ) */
 }
 
 export default Sidenav

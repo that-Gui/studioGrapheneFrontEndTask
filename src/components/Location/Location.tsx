@@ -1,4 +1,4 @@
-//section for util imports
+/* //section for util imports
 import React from "react"
 import './Location.css'
 import { GoogleMap, useJsApiLoader, Marker } from "@react-google-maps/api";
@@ -62,10 +62,4 @@ const Location: React.FC = () => {
 }
 
 export default Location
-
-{/* <div className="location">
-
-<div className="locleg">
-    <h2>LOCATION</h2>
-    <p>12 Upper St. Martin’s Lane<br/> WC2H 9FB, London</p>
-</div> */}
+ */

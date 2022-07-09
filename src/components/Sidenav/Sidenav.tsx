@@ -19,7 +19,7 @@ const Sidenav: React.FC<ppn> = (props) => {
             <div className="sidenav">
     
                <ul>
-                <li className="strike">09</li>
+                <li className="strike">01</li>
                 <li>----</li>
                 <li>----</li>
                 <li>----</li>

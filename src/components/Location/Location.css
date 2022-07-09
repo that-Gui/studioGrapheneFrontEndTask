@@ -1,13 +1,13 @@
 
 .location{
-    height: 80vh;
+    height: 100vh;
     background-color: var(--primary);
     color: var(--dark);
     position: relative;
 }
 
 .ting{
-    height: 80vh;
+    height: 100vh;
 }
 
 .locleg{

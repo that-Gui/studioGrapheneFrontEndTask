@@ -7,10 +7,10 @@ import { useInView } from 'react-intersection-observer'
 //section for component imports
 import Coco from '../../images/heroCoco.png'
 import stamp from '../../images/stamp.png'
-import { IChangable } from '../../Types/Types'
 
 
 //section for interface
+import { IChangable } from '../../Types/Types'
 
 
 //section for functional component

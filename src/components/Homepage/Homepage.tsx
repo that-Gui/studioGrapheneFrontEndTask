@@ -11,6 +11,7 @@ import Community from '../Community/Community'
 /* import Location from '../Location/Location' */
 import Location2 from '../Location/Location2'
 import Menu from '../Menu/Menu'
+import Contact from '../Contact/Contact'
 import Footer from '../Footer/Footer'
 
 
@@ -21,7 +22,7 @@ import Footer from '../Footer/Footer'
 // section for functional component
 const Homepage: React.FC = () => {
 
-    const [page, setPage] = React.useState('1');
+    const [page, setPage] = React.useState('0');
 
     const changepage = (number: string) => {
       setPage(number);
@@ -45,7 +46,7 @@ const Homepage: React.FC = () => {
         
         <Menu change={changepage}/>
  
-        <div className='wakanda'><h1>contactUs</h1></div>
+        <Contact change={changepage}/>
         
         <Footer change={changepage}/>
         

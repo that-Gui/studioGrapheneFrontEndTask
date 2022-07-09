@@ -1,0 +1,33 @@
+
+.contact{
+    height: 60vh;
+    background-color: greenyellow;
+    color: var(--text);
+    display: flex;
+    flex-direction: row;
+    padding-left: 8vw;
+    padding-right: 8vw;
+}
+
+.contacttxt{
+    background-color: pink;
+    display: flex;
+    flex-direction: column;
+}
+.ctline{
+    background-color:#fff;
+    height: 1rem;
+}
+
+.contactform{
+    background-color: pink;
+
+}
+#dts2{
+    width: 8rem;
+    height: 5rem;
+}
+.contactform form{
+    display: flex;
+    flex-direction: column;
+}

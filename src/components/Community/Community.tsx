@@ -15,12 +15,15 @@ import dets3 from '../../images/detail03.png'
 import heart from '../../images/heartsvg.svg'
 import chat from '../../images/chatsvg.svg'
 
-
+//section for interface
+interface IChangable { 
+    change: (number: string) => void;
+  }
 
 
 
 //section for functional component
-const Community: React.FC = (props) => {
+const Community: React.FC<IChangable> = (props) => {
 
     const { ref, inView } = useInView();
 

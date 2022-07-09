@@ -9,10 +9,12 @@ import Coco from '../../images/heroCoco.png'
 import stamp from '../../images/stamp.png'
 
 //section for interface
-
+interface IChangable { 
+    change: (number: string) => void;
+  }
 
 //section for functional component
-const Hero: React.FC = (props) => {
+const Hero: React.FC<IChangable> = (props) => {
 
     const { ref, inView } = useInView();
 

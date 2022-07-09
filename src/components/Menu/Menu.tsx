@@ -17,8 +17,12 @@ interface resobj {
     id: string
   }
 
+interface IChangable { 
+    change: (number: string) => void;
+  }
+
 //section for functional component
-const Menu: React.FC = (props) => {
+const Menu: React.FC<IChangable> = (props) => {
 
     const { ref, inView } = useInView();
 

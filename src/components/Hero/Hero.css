@@ -12,6 +12,7 @@
 
 .heroimgs{
     position: absolute;
+    top: 10vh;
 } 
 
 .heroimg{
@@ -20,6 +21,7 @@
 
 .logoimg{ 
     position: absolute;
+    top: 10vh;
     height: 20vh;
     transform: matrix(0.99, -0.12, 0.12, 0.99, 0, 0);   
 }

@@ -20,7 +20,7 @@ import Footer from '../Footer/Footer'
 // section for functional component
 const Homepage: React.FC = () => {
 
-    const [page, setPage] = React.useState('1');
+    const [page, setPage] = React.useState('0');
 
     const changepage = (number: string) => {
       setPage(number);

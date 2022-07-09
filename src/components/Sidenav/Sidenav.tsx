@@ -14,19 +14,20 @@ interface ppn{
 const Sidenav: React.FC<ppn> = (props) => {
 
 
-    if (props.pagenumber === '1'){
+    if(props.pagenumber === '1'){
         return(
         <div className="sidenav">
-
-           <ul>
-            <li className="strike">01</li>
-            <li>----</li>
-            <li>----</li>
-            <li>----</li>
-            <li>----</li>
-           </ul>
-   
-        </div>
+    
+               <ul>
+                <li className="strike">09</li>
+                <li>----</li>
+                <li>----</li>
+                <li>----</li>
+                <li>----</li>
+                <li>----</li>
+               </ul>
+       
+            </div>
     )}
     else if(props.pagenumber === '2'){
         return(
@@ -38,6 +39,8 @@ const Sidenav: React.FC<ppn> = (props) => {
                 <li>----</li>
                 <li>----</li>
                 <li>----</li>
+                <li>----</li>
+
                </ul>
        
             </div>
@@ -51,6 +54,7 @@ const Sidenav: React.FC<ppn> = (props) => {
                 <li>----</li>
                 <li>----</li>
                 <li className="strike">03</li>
+                <li>----</li>
                 <li>----</li>
                 <li>----</li>
                </ul>
@@ -68,6 +72,7 @@ const Sidenav: React.FC<ppn> = (props) => {
                 <li>----</li>
                 <li className="strike">04</li>
                 <li>----</li>
+                <li>----</li>
                </ul>
        
             </div>
@@ -83,6 +88,24 @@ const Sidenav: React.FC<ppn> = (props) => {
                 <li>----</li>
                 <li>----</li>
                 <li className="strike">05</li>
+                <li>----</li>
+               </ul>
+       
+            </div>
+        )  
+    }
+    else if(props.pagenumber === '6'){
+        return(
+
+            <div className="sidenav">
+    
+               <ul>
+                <li>----</li>
+                <li>----</li>
+                <li>----</li>
+                <li>----</li>
+                <li>----</li>
+                <li className="strike">06</li>
                </ul>
        
             </div>
@@ -92,6 +115,7 @@ const Sidenav: React.FC<ppn> = (props) => {
         <div className="sidenav">
     
                <ul>
+                <li>----</li>
                 <li>----</li>
                 <li>----</li>
                 <li>----</li>

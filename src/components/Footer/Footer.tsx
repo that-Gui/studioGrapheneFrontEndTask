@@ -8,13 +8,17 @@ import li from '../../images/Linkedin-icon.svg'
 import tw from '../../images/twitter-icon.svg'
 import ig from '../../images/instagram-icon.svg'
 
+//section for interface
+interface IChangable { 
+    change: (number: string) => void;
+  }
 
 //section for functional component
-const Footer: React.FC = (props) => {
+const Footer: React.FC<IChangable> = (props) => {
     
     const { ref, inView } = useInView();
 
-    if(inView){props.change('5')};
+    if(inView){props.change('6')};
     
     return(
         

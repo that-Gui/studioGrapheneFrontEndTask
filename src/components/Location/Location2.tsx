@@ -8,10 +8,12 @@ import { useInView } from 'react-intersection-observer'
 
 
 //section for interface
-
+interface IChangable { 
+    change: (number: string) => void;
+  }
 
 //section for functional component
-const Location2: React.FC = (props) => {
+const Location2: React.FC<IChangable> = (props) => {
     
     const { ref, inView } = useInView();
 

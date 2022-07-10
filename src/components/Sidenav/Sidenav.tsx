@@ -19,7 +19,7 @@ const Sidenav: React.FC<ppn> = (props) => {
             <div className="sidenav">
     
                <ul>
-                <li className="strike">01</li>
+                <li className="strike">-01-</li>
                 <li>----</li>
                 <li>----</li>
                 <li>----</li>
@@ -35,7 +35,7 @@ const Sidenav: React.FC<ppn> = (props) => {
     
                <ul>
                 <li>----</li>
-                <li className="strike">02</li>
+                <li className="strike">-02-</li>
                 <li>----</li>
                 <li>----</li>
                 <li>----</li>
@@ -53,7 +53,7 @@ const Sidenav: React.FC<ppn> = (props) => {
                <ul>
                 <li>----</li>
                 <li>----</li>
-                <li className="strike">03</li>
+                <li className="strike">-03-</li>
                 <li>----</li>
                 <li>----</li>
                 <li>----</li>
@@ -70,7 +70,7 @@ const Sidenav: React.FC<ppn> = (props) => {
                 <li>----</li>
                 <li>----</li>
                 <li>----</li>
-                <li className="strike">04</li>
+                <li className="strike">-04-</li>
                 <li>----</li>
                 <li>----</li>
                </ul>
@@ -87,7 +87,7 @@ const Sidenav: React.FC<ppn> = (props) => {
                 <li>----</li>
                 <li>----</li>
                 <li>----</li>
-                <li className="strike">05</li>
+                <li className="strike">-05-</li>
                 <li>----</li>
                </ul>
        
@@ -105,13 +105,13 @@ const Sidenav: React.FC<ppn> = (props) => {
                 <li>----</li>
                 <li>----</li>
                 <li>----</li>
-                <li className="strike">06</li>
+                <li className="strike">-06-</li>
                </ul>
        
             </div>
         )  
     }
-    /* else  return (
+    else return (
         <div className="sidenav">
     
                <ul>
@@ -124,7 +124,7 @@ const Sidenav: React.FC<ppn> = (props) => {
                </ul>
        
             </div>
-    ) */
+    )
 }
 
 export default Sidenav

@@ -61,7 +61,8 @@ const Footer: React.FC<IChangable> = (props) => {
                 </div>
             </div>
             <div className="footerlogo">
-                <h2>THIS IS THE<br/><span>LOGO</span></h2>
+                <h2>THIS IS THE</h2>
+                <h2 id='footlogo'>LOGO</h2>
             </div>
             <div className="footercopy">
             <p>2017. Company. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor .</p>  

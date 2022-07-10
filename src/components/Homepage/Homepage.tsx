@@ -24,11 +24,8 @@ const Homepage: React.FC = () => {
 
     const [page, setPage] = React.useState('0');
 
-    const changepage = (number: string) => {
-      setPage(number);
-    };
+    const changepage = (number: string) => {return setPage(number)};
     
-
   return (
     <div className="container">
 

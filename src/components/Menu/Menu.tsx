@@ -47,40 +47,40 @@ const Menu: React.FC<IChangable> = (props) => {
 
             <div className='starters'>
                 <div className={inView ? 'slidedup3' : 'slidedown2'}>
-                <h3>STARTERS</h3>
-                {food.filter( (ele: resobj) => ele.type == 'starters').map( (filteredFoods: resobj) => 
-                    <div className="starterm">
-                        <h5>{filteredFoods.title}</h5>
-                        <p>{filteredFoods.description}</p>
-                        <p><span>{`£`}{filteredFoods.price}</span></p>
-                    </div>
-                )}
+                    <h3>STARTERS</h3>
+                    {food.filter( (ele: resobj) => ele.type == 'starters').map( (filteredFoods: resobj) => 
+                        <div className="starterm">
+                            <h5>{filteredFoods.title}</h5>
+                            <p>{filteredFoods.description}</p>
+                            <p><span>{`£`}{filteredFoods.price}</span></p>
+                        </div>
+                    )}
                 </div>
             </div>
 
             <div className="mains">
                 <div className={inView ? 'slidedown2' : 'slidedup3'}>
-                <h3>MAIN<br/>COURSES</h3>
-                {food.filter( (ele: resobj) => ele.type == 'main_courses').map( (filteredFoods: resobj) => 
+                    <h3>MAIN<br/>COURSES</h3>
+                    {food.filter( (ele: resobj) => ele.type == 'main_courses').map( (filteredFoods: resobj) => 
                     <div className="starterm">
                         <h5>{filteredFoods.title}</h5>
                         <p>{filteredFoods.description}</p>
                         <p><span>{`£`}{filteredFoods.price}</span></p>
                     </div>
-                )}
+                    )}
                 </div>
             </div>
 
             <div className="side">
                 <div className={inView ? 'slidedup3' : 'slidedown2'}>
-                <h3>SIDES</h3>
-                {food.filter( (ele: resobj) => ele.type == 'sides').map( (filteredFoods: resobj) => 
-                    <div className="starterm">
-                        <h5>{filteredFoods.title}</h5>
-                        <p>{filteredFoods.description}</p>
-                        <p><span>{`£`}{filteredFoods.price}</span></p>
-                    </div>
-                )}
+                    <h3>SIDES</h3>
+                    {food.filter( (ele: resobj) => ele.type == 'sides').map( (filteredFoods: resobj) => 
+                        <div className="starterm">
+                            <h5>{filteredFoods.title}</h5>
+                            <p>{filteredFoods.description}</p>
+                            <p><span>{`£`}{filteredFoods.price}</span></p>
+                        </div>
+                    )}
                 </div>
             </div>
             

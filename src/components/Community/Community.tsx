@@ -24,27 +24,27 @@ import { IChangable } from '../../Types/Types'
 const Community: React.FC<IChangable> = (props) => {
 
     const { ref, inView } = useInView();
-    const { ref: aniref, inView: aniview } = useInView();
-
+    
 
     if(inView){props.change('2')};
     
     return(
-        <div className="community" ref={ref}>
+        <div className="community"  ref={ref}>
 
         <div className="topcom">
 
-            <div className='comtitle' ref={aniref}>
+            <div className='comtitle'>
 
                 
-                <h3>MEET OUR<br/>COMMUNITY</h3>
+                <h3>MEET OUR</h3>
+                <h3 id='comcom'>COMMUNITY</h3>
                 <div className="comline"></div>
                 <p className="combtn">KNOW MORE</p>
                 <p id="topp">LOREM IPSUM DOLOR SIT AMET ERNUT TEMPARTERO SERTU PER NABORE EN TORNA ENTALTO</p>
             
             </div>
 
-            <div className={aniview ? 'taco anime2' : 'taco'}>
+            <div className={inView ? 'taco anime2' : 'taco'}>
 
                 <div className="cardpic">
                     <img src={taco} id='cdpi' alt="" />
@@ -74,7 +74,7 @@ const Community: React.FC<IChangable> = (props) => {
 
         <div className='midcom'>
         
-            <div className={aniview ? 'waffle anime3': 'waffle'}>
+            <div className={inView ? 'waffle anime3': 'waffle'}>
 
             <div className="cardtxt2">
                 <h5>@love_food</h5>
@@ -106,7 +106,7 @@ const Community: React.FC<IChangable> = (props) => {
             </div>
             </div>
 
-            <div className={aniview ? 'anime4 squid':'squid'}>
+            <div className={inView ? 'anime4 squid':'squid'}>
 
                 <div className="cardtxt2">
                     <h5>@buzzfeedfood</h5>

@@ -26,7 +26,7 @@ const Contact: React.FC<IChangable> = (props) => {
             <div className="contacttxt">
                 <div className="ctline"></div>
                 <h3>COLLABORATE</h3>
-                <span>WITH US</span>
+                <h3 id='contwith'>WITH US</h3>
                 <div className="txtp">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
@@ -39,19 +39,19 @@ const Contact: React.FC<IChangable> = (props) => {
                 
                 <form>
            
-                <label> NAME: <br/><input type="text" name="name" placeholder='Name' /></label>
+                <label>NAME<br/><input type="text" name="name" placeholder='Name' /></label>
                
              
-                <label> SURNAME: <br/><input type="text" name="surname" placeholder='Surname' /></label>
+                <label>SURNAME<br/><input type="text" name="surname" placeholder='Surname' /></label>
                
              
-                <label> PHONE: <br/><input type="number" name="phone" placeholder='Phone'/></label>
+                <label>PHONE<br/><input type="number" name="phone" placeholder='Phone'/></label>
                
          
 
-                <label> EMAIL ADDRESS: <br/><input type="email" name="email" placeholder='Email'/></label>
+                <label>EMAIL ADDRESS<br/><input type="email" name="email" placeholder='Email'/></label>
 
-                <label> EXPERIENCE:<br/>
+                <label>EXPERIENCE<br/>
                 <select>
                     <option>Select</option>
                     <option value="lime">Lime</option>

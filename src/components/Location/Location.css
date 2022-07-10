@@ -1,28 +1,25 @@
 
 .location{
-    height: 80vh;
+    height: 70vh;
     background-color: var(--primary);
     color: var(--dark);
     position: relative;
 }
 
 .ting{
-    height: 80vh;
+    height: 70vh;
 }
 
 .locleg{
     position: absolute;
-    z-index: 5;
     top: 10vh;
     left: 10vw;
     background-color: #fff;
-    z-index: 2;
     padding: 1rem;
+    font-size: 1.3rem;
 }
 
 .locleg h2{
-    margin-top: -2.5rem;
-    text-align: center;
-    font-size: 3rem;
-    padding-bottom: 0.8rem;
+    margin-top: -3rem;
+    font-size: 4rem;
 }

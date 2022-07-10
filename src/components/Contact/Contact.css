@@ -18,33 +18,34 @@
     top: 0;
 }
 .contacttxt h3 {
-    font-size: 3rem;
+    font-size: 4rem;
     color: var(--dark);
     letter-spacing: -0.1rem;
 }
-.contacttxt span{
-    font-size: 5rem;
-    font-weight: 600;
+#contwith{
+    font-size: 6.5rem;
     color: var(--dark);
     margin-top: -1rem;
     z-index: 33;
 }
 .ctline{
     background-color: #fff;
-    height: 0.5rem;
-    width: 23rem;
+    height: 1rem;
+    width: 19rem;
     position: absolute;
-    top: 5.5rem;
+    top: 7rem;
     left: -1.3rem;
 }
 
 .txtp{
     width: 23rem;
-    margin-top: 5rem;
+    margin-top: 3rem;
+    font-size: 1.2rem;
 }
 .txtp p{
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
+
 /* section for righthand side of contact us section */
 
 .contactform{
@@ -84,6 +85,7 @@ form input{
 
 form select{
     background-color: var(--primary);
+    color: var(--text);
     border-bottom: 1px solid var(--dark);
     font-size: 1.2rem;
     width: 20vw;

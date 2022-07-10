@@ -1,6 +1,7 @@
 //section for util imports
 import React from 'react'
 import './App.css'
+import './fonts/DINCondensedBold.ttf'
 
 //section for component imports
 import Homepage from './components/Homepage/Homepage'

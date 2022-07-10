@@ -36,8 +36,6 @@ const Homepage: React.FC = () => {
         <Hero change={changepage}/>
      
         <Community change={changepage}/>
-          
-        {/* <Location/> */}
 
         <Location2 change={changepage}/>
         

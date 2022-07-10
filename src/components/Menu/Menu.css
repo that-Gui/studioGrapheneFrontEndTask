@@ -3,49 +3,62 @@
     background-color: #F8F8F8;
     color: var(--dark);
     height: 100vh;
-    display: grid;
-    grid-template: auto 1fr / 1fr 1fr 1fr 1fr;
+    display: flex;
+    flex-direction: row;
     padding-left: 10vw;
     padding-right: 10vw;
     overflow: hidden;
-}
-
-
-.menutitle{
-    margin-top: 4rem;
-    padding: 2rem;
-    grid-column: 1 / 5;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     position: relative;
 }
-.menutitle h3{
+.menutitle{
+    text-align: center;
+    position: absolute;
+    top: 1rem;
+    left: 45vw;
+    width: 30vw;
+}
+#menutt{
+    font-size: 5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
     z-index: 33;
+}
+.menutitle p{
+    background-color: var(--primary);
+    color: var(--dark);
+    font-size: 1.4rem;
+    padding: 0.5rem;
+    width: 7rem;
+    position: absolute;
+    top: 6rem;
+    left: 5rem;
 }
 .menuline{
     background-color: var(--primary);
     height: 0.5rem;
-    width: 20rem;
+    width: 18rem;
     position: absolute;
-    top: 4rem;
+    top: 2.5rem;
+    left: -1rem;
+    z-index: 1;
 }
 
+/* section for starters */
 .starters{
-    grid-column: 1 / 2;
     border-right: 1px solid #CECECE;
     padding: 2rem;
     min-width: 20vw;
+    overflow: hidden;
 }
+
 .starters h3{
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    font-size: 5rem;
     text-align: left;
-    margin-left: -1rem;
+    margin-top: 13rem;
 }
 .starterm h5{
-    font-size: 1rem;
+    font-size: 1.4rem;
     color: var(--dark);
     text-align: left;
     padding-bottom: 0.5rem;
@@ -53,8 +66,8 @@
 }
 .starterm p{
     font-size: 1rem;
+    font-family: 'Roboto';
     color: var(--text);
-    width: 80%;
     text-align: left;
     margin-bottom: 1rem;
 }
@@ -63,62 +76,57 @@
     padding: 0.2rem;
     font-weight: 500;
     color: var(--dark);
+    font-size: 1.1rem;
 }
+
+/* section for mains column */
 
 .mains {
-    grid-column: 2 / 3;
     text-align: center;
     border-right: 1px solid #CECECE;
     padding: 2rem;
     min-width: 20vw;
+    overflow: hidden;
 }
 .mains h3{
-    margin-top: 11rem;
-    margin-bottom: 2rem;
+    font-size: 5rem;
     text-align: left;
-    margin-left: -1rem;
+    margin-left: -3rem;
+    margin-top: 21rem;
 }
 
+/* section for sides */
 .side {
-    grid-column: 3 / 4;
     text-align: center;
     border-right: 1px solid #CECECE;
     padding: 2rem;
     min-width: 20vw;
+    overflow: hidden;
 
 }
 .side h3{
-    margin-top: 7rem;
-    margin-bottom: 2rem;
+    font-size: 5rem;
     text-align: left;
-    margin-left: -1rem;
+    margin-left: -3rem;
+    margin-top: 18rem;
 }
 
+/* section for desserts */
+
 .desserts {
-    grid-column: 4 / 5;
     text-align: center;
     padding: 2rem;
     min-width: 20vw;
+    overflow: hidden;
 
 }
 .desserts h3{
-    margin-top: 3rem;
-    margin-bottom: 2rem;
+    font-size: 5rem;
     text-align: left;
-    margin-left: -1rem;
+    margin-left: -2.2rem;
+    margin-top: 11rem;
 }
 
-.menutitle p{
-    background-color: var(--primary);
-    color: var(--dark);
-    font-weight: 600;
-    padding: 0.5rem;
-    width: 7rem;
-}
-
-.menu h3{
-    font-size: 3rem;
-}
 
 /* section for menu animations */
 

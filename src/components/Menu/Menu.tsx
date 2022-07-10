@@ -40,12 +40,13 @@ const Menu: React.FC<IChangable> = (props) => {
             <div className="menu" ref={ref}>
 
             <div className="menutitle">
+                <h3 id='menutt'>OUR MENU</h3>
                 <div className="menuline"></div>
-                <h3>OUR MENU</h3>
                 <p>KNOW MORE</p>
             </div>
-
+            
             <div className='starters'>
+
                 <div className={inView ? 'slidedup3' : 'slidedown2'}>
                     <h3>STARTERS</h3>
                     {food.filter( (ele: resobj) => ele.type == 'starters').map( (filteredFoods: resobj) => 

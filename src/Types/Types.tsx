@@ -1,7 +1,6 @@
 //section for util imports
-import React from "react";
+import React from 'react'
 
-export interface IChangable { 
-    change: (number: string) => void;
-  }
-
+export interface IChangable {
+  change: (number: string) => void
+}

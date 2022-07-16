@@ -8,12 +8,9 @@ import Homepage from './components/Homepage/Homepage'
 
 //section for functional components
 const App: React.FC = () => {
-
   return (
-    <div className="App">
-
-      <Homepage/>
-
+    <div className='App'>
+      <Homepage />
     </div>
   )
 }
